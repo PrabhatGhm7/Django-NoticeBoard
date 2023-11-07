@@ -1,0 +1,26 @@
+{% load static %}  
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ notice.title }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="notice">
+        <h1>{{ notice.title }}</h1>
+
+        <!-- Display photos -->
+        {% if notice.photo %}
+            <img src="{{ notice.photo.url }}" alt="{{ notice.title }} Photo" class="notice-photo">
+        {% endif %}
+
+        <div class="notice-content">
+            <p class="date">{{ notice.date_created|date:"M. d, Y" }}</p>
+            <p style="font-size: 1.2rem; line-height:2;">{{ notice.content }}</p>
+        </div>
+        
+
+    <p><a href="{% url 'notice_board_app:notice_list' %}" style="font-size: 1.2rem; " class="back-to-notices">Back to Notices</a></p> 
+    
+</body>
+</html>

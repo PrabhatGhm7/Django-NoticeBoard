@@ -1,0 +1,128 @@
+/* Resetting default margin and padding */
+body, h1, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(252, 247, 254, 0.187);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.333);
+}
+
+h1 {
+    color: #3498db;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    background-color: #fff;
+}
+
+li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: #3498db;
+}
+
+li a:visited {
+    color: #555;
+}
+
+li a:active {
+    color: #e74c3c;
+}
+
+li a:focus {
+    outline: none;
+    border: 2px solid #3498db;
+}
+
+li a:focus, li a:active {
+    border-radius: 5px;
+}
+
+li strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.date {
+    color: red;
+}
+
+.logo {
+    width: 46px;
+    height: auto;
+    margin-left: 10px;
+    vertical-align: middle; 
+}
+
+/* Style for the "Back to Notices" link */
+.back-to-notices {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #0000005e;
+    background-color:lightgoldenrodyellow;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #00000071;
+    transition: background-color 0.3s ease;
+}
+.back-to-notice:hover {
+    transform: scale(1.05); /* Scale up the image on hover for a subtle effect */
+}
+
+/* Add styles for the notice photo */
+.notice-photo {
+    display: block;
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    margin: 20px auto; /* Adjust margin to your preference */
+    border: 2px solid #3498db; /* Border color */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Box shadow for a more elegant look */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.notice-photo:hover {
+    transform: scale(1.05); /* Scale up the image on hover for a subtle effect */
+}
+
+
+
+.back-to-notices:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.back-to-notices:active {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.date {
+    color: red;
+}
+

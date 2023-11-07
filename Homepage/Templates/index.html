@@ -1,0 +1,399 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Other meta tags and title -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="{% static 'images/image.png' %}">
+    <!-- Other stylesheet links -->
+    <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+    <script src="{% static 'js/main.js' %}"></script>
+    
+    
+
+    <header class="header">
+        <a href="#" class="logo"><img src="{% static 'images/logo.png' %}" alt=""></a>
+        <div class="fas fa-bars"></div>
+        <nav class="navbar">
+
+        
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="{% url 'notice_board_app:notice_list' %}" class="notices-link">Notices</a></li>
+                <li><a href="#service">aim</a></li>
+                <li><a href="#team">team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <style>
+            .outlined-text {
+                -webkit-text-stroke: 0.1px black; /* WebKit browsers */
+                text-stroke: 0.1px black; /* Standard syntax */
+                color: white; /* Text color */
+            }
+        </style>
+        
+        <h1 style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);text-decoration: underline;"><b>पहाडी समाज कल्याण केन्द्र</b></h1>
+        <h2 style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); text-decoration: underline;">रामेछाप</h2>
+
+              
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+    </section>
+
+
+  <section id="about" class="about">
+    <h1 class="heading">हाम्रोबारे</h1>
+    <div class="row">
+        <div class="content">
+            <h3><b>पहाडी समाज कल्याण केन्द्र</b></h3>
+            <p style="font-size: 2rem;line-height: 1.6;">
+                पहाडी समाज कल्याण केन्द्र ,Mountain Social Welfare Center (MSCW) , रामेछाप जिल्लामा सन् १९९८ (२०५५ वि.सं.) मा स्थापना भएको र जिल्ला प्रशासन कार्यालय रामेछापमा गैनाफामुखी, गैरराजनीतिक र गैरसरकारी संस्थाको रूपमा दर्ता भएको स्थानीय गैरसरकारी संस्था हो। 
+            
+                यो समाज कल्याण परिषद्, गैरसरकारी संस्था महासंघ नेपाल र गैरसरकारी संस्था समन्वय समितिमा आबद्ध र दर्ता भएको छ। पहाडी समाज कल्याण केन्द्र ग्रामीण क्षेत्रमा बसोबास गर्ने गरिब, विपन्न र विपन्न समुदायका जनताको जीविकोपार्जन सुधारका अवसरहरू सुनिश्चित गर्न स्थानीय जनताको क्षमता अभिवृद्धि गरी स्थानीय स्रोतसाधनको विवेकपूर्ण उपयोग गरी दिगो विकासलाई प्रवर्द्धन गर्ने उद्देश्यले स्थापना भएको हो। 
+            
+                पहाडी समाज कल्याण केन्द्रले स्थापनाकालदेखि नै खाद्य सुरक्षा, शिक्षा, ग्रामीण पूर्वाधार विकास, विपद् जोखिम न्यूनीकरण तथा व्यवस्थापन, जलवायु परिवर्तन, ऊर्जा, वातावरण, कृषि, प्राकृतिक स्रोत व्यवस्थापन, खानेपानी, सरसफाइ , मानवअधिकार, रामेछाप जिल्लामा बसोबास गर्ने अधिकांश विपन्न र विपन्न जनताको सामाजिक, आर्थिक र स्वास्थ्य अवस्था सुधार गर्न विभिन्न दातृ निकायबाट प्राप्त आर्थिक सहयोगबाट शान्ति र प्रजातन्त्र, स्वास्थ्य र बाल अधिकारको लागि लामो समयदेखि काम गरिआएको छ। <br>
+            
+             <br>यसले सामाजिक परिचालन र प्राविधिक ब्याकस्टपिङको माध्यमबाट सेवा प्रवाह संयन्त्रलाई सुदृढ गर्न र गरिबीको समस्यालाई सम्बोधन गर्न र प्राकृतिक स्रोतहरूको संरक्षण र विकास गर्न स्थानीय प्रविधिको प्रवर्द्धन गरी दिगो विकासलाई प्रवर्द्धन गर्न मानव अधिकारको आधारभूत दृष्टिकोण अपनाएको छ। 
+            
+                यस प्रक्रियामा, पहाडी समाज कल्याण केन्द्रले आधारभूत सामाजिक सेवाहरू (शिक्षा, खानेपानी, स्वास्थ्य, स्वच्छता र सरसफाई) मार्फत आधारभूत सेवाहरूमा सुधार गर्दै महिला, बालबालिका, गरिब, विपन्न र विपन्न समुदायको जीवनस्तरमा केन्द्रित विकास गतिविधिहरू सञ्चालन गरेको छ। स्थानीय निकाय  र जिल्ला स्तरका विभिन्न सरकारी लाइन एजेन्सीहरूसँग निकट समन्वयमा सुधार र सामुदायिक पूर्वाधार विकासमा उचित भूमिका खेलीआएको छ।
+            </p>
+            
+
+
+        </div>
+    </div>
+    <!add photo !>
+	</div>
+	<div class = "single-service">
+		<img src="{% static 'images/img1.jpg' %}">
+		<div class="overlay"></div>
+    </div>
+	</div>
+
+    <div class = "single-service">
+		<img src="{% static 'images/img2.jpg' %}">
+		<div class="overlay"></div>
+    </div>
+	</div>
+
+    <div class = "single-service">
+		<img src="{% static 'images/img3.jpg' %}">
+		<div class="overlay"></div>
+    </div>
+	</div>
+
+    <div class = "single-service">
+		<img src="{% static 'images/img4.jpg' %}">
+		<div class="overlay"></div>
+    </div>
+	</div>
+
+    <div class = "single-service">
+		<img src="{% static 'images/img5.jpg' %}">
+		<div class="overlay"></div>
+    </div>
+	</div>
+
+    <div class = "single-service">
+		<img src="{% static 'images/img6.jpg' %}">
+		<div class="overlay"></div>
+    </div>
+	</div>
+
+    <div class = "single-service">
+		<img src="{% static 'images/img7.jpg' %}">
+		<div class="overlay"></div>
+    </div>
+	</div>
+
+</div>
+</div>
+</section>
+
+
+  </section>
+<div class="pt-5 pb-5" style="background-color: #f2f2f2;">
+    <div class="container">
+      <div class="row">
+        <div class="section-head col-sm-12" id="service">
+          <h1>हाम्रो उद्देश्य</h1>
+          <p>हाम्रो संगठनले पूरा गर्न लिएको उद्देश्यहरू ।
+            </p>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-medkit"></i></span>
+            <h6 style="text-align: left;">
+                •   स्वास्थ्य र पोषण<br>
+                •	जीविकोपार्जन<br>
+                •   मानव अधिकार<br>
+                •	विपद् जोखिम न्यूनीकरण<br>
+                </h6>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-tint"></i></span>
+            <h6 style="text-align: left;">
+                •   जलवायु परिवर्तन अनुकूलन<br>
+                •   खाद्य सुरक्षा, उद्यमशीलता विकास<br>
+                •   प्राकृतिक स्रोत व्यवस्थापन<br>
+                •   खानेपानी र सरसफाइ<br> 
+                <br>
+              </h6>
+  
+          
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-graduation-cap"></i></span>
+              <h6 style="text-align: left;">
+                •	शिक्षा<br>
+                •	बालअधिकार<br>
+                •	सामाजिक परिचालन<br>
+                •	ग्रामीण पूर्वाधार विकास<br>             
+                </h6>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        
+
+<section class="team" style="margin-top: 7rem;">
+    <h1 class="heading" style="margin-top: -1.5rem;" id="team">Karya Samiti</h1>
+    <p></p>
+    <div class="row">
+        <div class="card">
+            <div class="image">
+                <img src="{% static 'images/president.png' %}" alt="Team member 1">
+            </div>
+            <div class="info">
+                <h3>रत्नप्रसाद कडेल</h3>
+                <span>अध्यक्ष</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card">
+            <div class="image">
+                <img src="{% static 'images/firstupa.jpg' %}" alt="Team member 1">
+            </div>
+            <div class="info">
+                <h3>श्याम प्रसाद पकुवाल</h3>
+                <span>प्रथम उपाध्यक्ष</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card">
+            <div class="image">
+                <img src="{% static 'images/sarila.png' %}" alt="Team member 1">
+            </div>
+            <div class="info">
+                <h3>सरिला पाठक</h3>
+                <span>द्वितिय उपाध्यक्ष</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card">
+            <div class="image">
+                <img src="{% static 'images/birbal.png' %}" alt="Team member 1">
+            </div>
+            <div class="info">
+                <h3>वीरवल प्रसाद पाठक</h3>
+                <span>महासचिव</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card">
+            <div class="image">
+                <img src="{% static 'images/chandra.png' %}" alt="Team member 1">
+            </div>
+            <div class="info">
+                <h3>चन्द्र बहादुर बिक</h3>
+                <span>सचिव</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card">
+            <div class="image">
+                <img src="{% static 'images/lila.png' %}" alt="Team member 1">
+            </div>
+            <div class="info">
+                <h3>लिला तामाङ</h3>
+                <span>कोषाध्यक्ष</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card">
+            <div class="image">
+                <img src="{% static 'images/norbu.png' %}" alt="Team member 1">
+            </div>
+            <div class="info">
+                <h3>नाेर्वु योञ्जन</h3>
+                <span>सदस्य</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card">
+            <div class="image">
+                <img src="{% static 'images/roshan.png' %}" alt="Team member 1">
+            </div>
+            <div class="info">
+                <h3>रोशन श्रेष्ठ</h3>
+                <span>सदस्य</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card">
+            <div class="image">
+                <img src="{% static 'images/laxmi.png' %}" alt="Team member 1">
+            </div>
+            <div class="info">
+                <h3>विष्णुलक्ष्मी उप्रेती (कंडेल)</h3>
+                <span>सदस्य</span>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+
+
+  <section>
+
+    <div class="testimonials mt-100">
+        <div class="container">
+            <div class="section-header" style="text-align: center;">
+                <h2 style="margin-top: -15rem;">सल्लाकार समिति</h2>
+                <p style="font-size: 2rem;"></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="testimonials-content">
+        <div class="container">
+            <div class="testimonial-item">
+                <div class="testimonial-img">
+                    <img src="./images/testimonial-1.jpg" alt="">
+                </div>
+                <div class="testimonial-text">
+                    <h3>हरिकृष्ण पाठक</h3>
+                    <h4>संयोजक</h4>
+                </div>
+            </div>
+    
+            <div class="testimonial-item">
+                <div class="testimonial-img">
+                    <img src="./images/testimonial-2.jpg" alt="">
+                </div>
+                <div class="testimonial-text">
+                    <h3>उद्धव प्रसाद कडेल</h3>
+                    <h4>सदस्य</h4>
+                </div>
+            </div>
+    
+            <div class="testimonial-item">
+                <div class="testimonial-img">
+                    <img src="./images/testimonial-3.jpg" alt="">
+                </div>
+                <div class="testimonial-text">
+                    <h3>देवकी पाठक</h3>
+                    <h4>सदस्य</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+  </section>                  
+
+
+
+<script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'lib/jquery/jquery-migrate.min.js' %}"></script>
+<script src="{% static 'lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'lib/easing/easing.min.js' %}"></script>
+<script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+<script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+<script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+
+
+
+<div class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-links order-md-1 order-lg-0">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">Home</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#about">About Us</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#service">Our Aims</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6 col-md-12 order-md-0 order-lg-1 text-center">
+                    <img src="{% static 'images/foot.jpg' %}" alt="Team member 1">
+                </div>
+                
+
+                <div class="col-lg-3 col-md-6 footer-contact order-md-2 order-lg-2">
+                    <h4>Contact Us</h4>
+                    <p style="font-size: 1.4rem;">
+                        <strong>Address:</strong> Doramba Sailung -2 , Doramba<br>
+                        <strong>Contact Address:</strong> Manthali -1 , Aakesha <br>
+                        <strong>Phone:</strong> 048 540287<br>
+                        <strong>Email:</strong> <a href="mailto:mswcrch@gmail.com">mswcrch@gmail.com</a>
+                        
+
+                    </p>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/mswcdoramba"><i class="ion-logo-facebook"></i></a>
+                        <a href="https://twitter.com/login?lang=en"><i class="ion-logo-twitter"></i></a>
+                        <a href="mailto:mswcrch@gmail.com"><i class="ion-logo-googleplus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-6 copyright" style="color: black; background-color: #fff; font-size: 1.3rem; display: inline-block;">
+        </div>
+    </div>
+    
+          </div>
+      </div>
+  </div>
+
+  <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+</body>
+</html>
+

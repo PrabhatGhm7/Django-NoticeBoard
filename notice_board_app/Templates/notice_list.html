@@ -1,0 +1,22 @@
+{% load static %}  
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notice Board</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>
+        Notices : Pahadi Samaj Kalyan Kendra (MSWC)
+        <img src="{% static 'logo.png' %}" alt="Logo" class="logo">
+    </h1>
+    <ul>
+        {% for notice in notices reversed %}
+            <li>
+                <strong><a href="{% url 'notice_board_app:notice_detail' pk=notice.pk %}">{{ notice.title }}</a></strong><br>
+                <span class="date">{{ notice.date_created|date:"M. d, Y" }}</span>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

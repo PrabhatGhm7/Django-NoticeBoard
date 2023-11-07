@@ -1,0 +1,1 @@
+default_app_config = 'notice_board_app.apps.NoticeConfig'
